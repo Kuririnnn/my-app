@@ -1,7 +1,19 @@
 {
     "cityData": {
         "cityCode": "370100",
-        "cityName": "济南市"
+        "cityName": "济南市",
+        "centerCoor": {
+            "lat": 36.674912,
+            "lng": 117.024065
+        },
+        "zoomLevel": 15,
+        "maxZoom": 16,
+        "minZoom": 9,
+        "tiles": [
+            {
+                "url": "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}"
+            }
+        ]
     },
     "prefix": "/",
     "reqPrefix": "http://127.0.0.1:8081"

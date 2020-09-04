@@ -10,6 +10,7 @@ export default class extends React.Component {
                     <Link to={`${prefix}clock`}>时钟</Link>
                     <Link to={`${prefix}logo`}>标志</Link>
                     <Link to={`${prefix}style`}>样式</Link>
+                    <Link to={`${prefix}map`}>地图</Link>
                 </header>
             </div>
         )

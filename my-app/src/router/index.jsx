@@ -4,6 +4,7 @@ import Home from './../pages/home'
 import Clock from './../pages/clock'
 import Logo from './../pages/logo'
 import Style from './../pages/style';
+import Map from './../pages/map';
 
 
 export default class extends React.Component {
@@ -15,6 +16,7 @@ export default class extends React.Component {
                 <Route component={Clock} path={`${prefix}clock`} />
                 <Route component={Logo} path={`${prefix}logo`} />
                 <Route component={Style} path={`${prefix}style`} />
+                <Route component={Map} path={`${prefix}map`} />
             </Router>
         )
     }
