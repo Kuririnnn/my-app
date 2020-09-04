@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Kuririnnn's Demo by create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Kuririnnn's Demo</title>
+  <script src='%PUBLIC_URL%/js/jquery.min.js'></script>
+  <script>
+    const initConfig = (async () => {
+      console.log('进入initConfig')
+      // json同步加载
+      $.ajaxSettings.async = false
+      await $.getJSON('./config.json', function (data) {
+        console.log('返回config')
+        console.log(data);
+        window.config = data
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
