@@ -7,6 +7,8 @@ import Style from './../pages/style';
 import Map from './../pages/map';
 import DarkMode from './../pages/darkMode';
 import Error from './../pages/error';
+import Lazy from './../pages/lazy';
+import Lifecycle from './../pages/lifecycle';
 
 
 export default class extends React.Component {
@@ -22,6 +24,8 @@ export default class extends React.Component {
                     <Route component={Style} path={`${prefix}style`} />
                     <Route component={Map} path={`${prefix}map`} />
                     <Route component={DarkMode} path={`${prefix}darkMode`} />
+                    <Route component={Lazy} path={`${prefix}lazy`} />
+                    <Route component={Lifecycle} path={`${prefix}lifecycle`} />
                     <Route component={Error} />
                 </Switch>
             </Router>

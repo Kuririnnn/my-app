@@ -10,9 +10,9 @@ export default class extends React.Component {
         }
     }
     componentDidMount(){
-        setInterval(() => {
-            this.test();
-        }, 3000);
+        // setInterval(() => {
+        //     this.test();
+        // }, 3000);
     }
     test = () =>{
         this.setState({
@@ -20,7 +20,7 @@ export default class extends React.Component {
         });
     }
     render() {
-        console.log(`home render,count:${this.state.count}`);
+        // console.log(`home render,count:${this.state.count}`);
         const prefix = window.config.prefix === '' ? '/' : window.config.prefix;
         return (
             <div className="Home">
@@ -30,6 +30,8 @@ export default class extends React.Component {
                     <NavLink to={`${prefix}style`}>样式</NavLink>
                     <NavLink to={`${prefix}map`}>地图</NavLink>
                     <NavLink to={`${prefix}darkMode`}>深色样式</NavLink>
+                    <NavLink to={`${prefix}lazy`}>延迟加载</NavLink>
+                    <NavLink to={`${prefix}lifecycle`}>生命周期</NavLink>
                     <NavLink to={`${prefix}react`} activeClassName='active'>404</NavLink>
                 </header>
                 {/* <div className="welcome">
